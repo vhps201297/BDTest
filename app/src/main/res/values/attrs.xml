@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AccessComponent">
+        <attr name="width_triangle" format="float" />
+        <attr name="height_triangle" format="float" />
+        <attr name="is_rectangle_triangle" format="boolean" />
+    </declare-styleable>
+</resources>

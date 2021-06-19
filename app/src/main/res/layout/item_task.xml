@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:layout_height="100dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/img_item_task"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            />
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/img_item_task"
+            android:layout_toStartOf="@+id/checkbox_task"
+            >
+            <TextView
+                android:id="@+id/txt_task_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre de la tarea"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/txt_description_task"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descripción de la tarea erherherthertherthertherthertherh"
+                android:textSize="12sp"
+                android:maxLines="1"
+                />
+
+            <TextView
+                android:id="@+id/txt_date_finalized"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fecha de finalización: 20/12/20"
+                android:textSize="12sp"
+                />
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/checkbox_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
